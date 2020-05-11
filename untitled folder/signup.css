@@ -1,0 +1,133 @@
+   table,th,td
+   {
+      border-collapse:collapse;
+      padding:2px;
+	   background-color:#3691b0;
+   }
+   table
+   {
+      text-align:left;
+	   border:2px solid black;
+   }
+   h1.f
+   {
+      text-align:center;
+      font-size:50;
+	   margin:50px 50px;
+	   font-family:Arial,serif;
+	   color:black;
+   }
+   h1.s
+   {
+      text-align:left;
+      font-size:25;
+	   margin:20px 20px;
+	   color:black;
+   }
+   body
+   {
+      background-image:url("hour-of-code-kahoot-games.jpg");
+	   height: 100%;
+	   background-repeat:no-repeat;
+	   background-position:center;
+	   background-size:cover;
+   }
+   .button
+   {
+	   background-color:black;
+		font-size:25px;
+		color:white;
+		padding:2px 2px;
+		border-radius:100px;
+		border:1px solid black;
+		width:300px;
+		text-align:center;
+   }
+   input[type=button]:hover 
+   {
+      background-color:white;
+		color:black;
+   }
+   input[type=text] 
+   {
+      width:60px;
+      padding:12px 10px;
+      margin:8px;
+      box-sizing:border-box;
+		border:2px solid black;
+	   border-radius:10px;
+		background-color:white;
+		color:black;
+		font-size:10px;
+		text-align:left;
+   }
+   input[type=password] 
+   {
+      width:400px;
+      padding:12px 10px; 
+      margin:8px 0;
+      box-sizing:border-box;
+		border:2px solid black;
+		border-radius:10px;
+		background-color:white;
+		color:black;
+		font-size:10px;
+		text-align:left;
+   }
+   div.d
+   {
+	   background-color:CCFF66;
+	   color:black;
+	   font-size:17;
+	   padding:0px 10px 0px 0px;
+	   position:static;
+	   border:6px solid black;
+	   border-radius:50px;
+	   text-align:center;
+	}
+	ul 
+	{
+      list-style-type:none;
+      margin:0;
+      padding:0;
+      overflow:hidden;
+      background-color:black;
+	   border:6px solid black;
+	   border-radius:50px;
+	   position: fixed;
+      top: 0;
+      width: 100%;
+    }
+	li 
+	{
+      float: left;
+   }
+   li a 
+	{
+      display:block;
+      color:white;
+      text-align:center;
+      padding:14px 16px;
+	   font-size:30px;
+      text-decoration:none;
+   }
+	li a:hover 
+	{
+      background-color:white;
+	   color:black;
+   }
+	form
+	{
+	   padding:200px 400px;
+	}
+   span{
+color:white;
+}
+#myForm div{
+color:white; 
+font-size:14px
+}
+.innerdiv{
+width:65%;
+float:left
+}

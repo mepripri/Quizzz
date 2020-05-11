@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://127.0.0.1/phpproj/ContactFrom_v1/signup.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Contact V1</title>
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/png" href="http://127.0.0.1/phpproj/ContactFrom_v1/images/icons/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/animate.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/util.css">
+	<link rel="stylesheet" type="text/css" href="./Contact V1_files/main.css">	
+	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Awesome App Template built with Bootstrap Framework and Paperkit for creating App Landing Pages by TemplateFlip.com">
+    <link href="./Contact V1_files/css" rel="stylesheet">
+    <link href="./Contact V1_files/font-awesome.min(1).css" rel="stylesheet">
+    <link href="./Contact V1_files/bootstrap.min(1).css" rel="stylesheet">
+    <link href="./Contact V1_files/paper-kit.css" rel="stylesheet">
+    <link type="text/css" href="./Contact V1_files/main(1).css" rel="stylesheet"> 
+<script>
+function checkForm() 
+{ 
+	var name = document.getElementById("username1").value;
+	var password = document.getElementById("password1").value;
+	if (name == '' || password == '') 
+	{
+		alert("Fill All Fields");
+	} 
+	else 
+	{ 
+		var user1 = document.getElementById("username").innerHTML;
+		var pass1 = document.getElementById("password").innerHTML;
+		if (user1== 'Username is incorrect' || pass1 == 'Password is incorrect') 
+		{
+			alert("Please enter Valid Information");
+		} 
+		else 
+		{
+			document.getElementById("myForm").submit();
+		}
+
+	}
+}
+function validate(field, query) 
+{
+	var xmlhttp = new XMLHttpRequest();
+	xmlhttp.onreadystatechange = function() 
+	{
+		if (xmlhttp.readyState != 4 ) 
+		{
+			document.getElementById(field).innerHTML = "Validating..";
+		} 
+		else if (xmlhttp.readyState == 4 && xmlhttp.status == 200) 
+		{
+			document.getElementById(field).innerHTML = xmlhttp.responseText;
+		} 
+		else 
+		{
+			document.getElementById(field).innerHTML = "Error Occurred. <a href='index.php'>Reload Or Try Again</a> the page.";
+		}
+	}
+	xmlhttp.open("GET", "validation2.php?field=" + field + "&query=" + query, false);
+	xmlhttp.send();
+}
+</script>
+</head>
+<body>
+	 
+      <div class="aa-header">
+        <nav class="navbar navbar-expand-md navbar-transparent" style="height: 100px;">
+          <div class="container"><a class="navbar-brand px-0 py-0" href="http://127.0.0.1/phpproj/ContactFrom_v1/index.html">Quizzes</a>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1/phpproj/ContactFrom_v1/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1/phpproj/ContactFrom_v1/cricket.html">Quizzes</a></li>
+                <li class="nav-item"><a class="nav-link" href="http://127.0.0.1/phpproj/ContactFrom_v1/signup.html#pricing">Scores</a></li>
+                <li class="nav-item"><a class="btn btn-outline-neutral btn-round" href="http://127.0.0.1/phpproj/ContactFrom_v1/ContactFrom_v1/signup.html">Signup/Login</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+	<div class="contact1">
+		<div class="container-contact1">
+			<form class="contact1-form validate-form">
+				<span class="contact1-form-title">
+					Register
+				</span>
+
+				<div class="wrap-input1 validate-input" data-validate="Name is required">
+					<input class="input1" type="text" name="name" placeholder="Name">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<input class="input1" type="text" name="email" placeholder="Email">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Subject is required">
+					<input class="input1" type="text" name="user" placeholder="Username">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="wrap-input1 validate-input" data-validate="Message is required">
+					<input class="input1" type="text" name="password" placeholder="Password">
+					<span class="shadow-input1"></span>
+				</div>
+
+				<div class="container-contact1-form-btn">
+					<button class="contact1-form-btn">
+						<span>
+							Create Account
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+
+<!--
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js"></script>
+	<script src="vendor/tilt/tilt.jquery.min.js"></script>
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script>
+
+Global site tag (gtag.js) - Google Analytics -->
+<!--<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+
+===============================================================================================
+	<script src="js/main.js"></script>-->
+
+
+
+</body></html>
